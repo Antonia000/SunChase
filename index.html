@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>SunChase</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0,
+     maximum-scale=1.0, user-scalable=no" />
+
+    <!--Style-->
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/fontawesome-free-5.15.3-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--NavBar-->
+    <div class="container-fluid">
+        <div class="row pt-3">
+            <div class="col-6">
+                <img class="ml-4 float-left" src="./img/logo.png" height="40" width="130" />
+            </div>
+
+            <div class="col-6 nav-links">
+                <ul class="list-unstyled float-right p-2">
+                    <li class="nav-item float-left"><a class="p-3 text-light text-decoration-none" href="#">Home</a></li>
+                    <li class="nav-item float-left gls"><a class="p-3 text-light text-decoration-none" href="#mostwanted">Sunglasses</a></li>
+                    <li class="nav-item float-left"><a class="p-3 text-light text-decoration-none" href="#ourclients">Our clients</a></li>
+                    <li class="nav-item float-left"><a class="p-3 text-light text-decoration-none" href="#about">About us</a></li>
+                    <li class="nav-item float-left" id="cart-info">
+                        <button type="button" class="btn btn-sm float-left"><span class="cart-info__icon text-light"><i class="fas fa-shopping-cart"></i></span></button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div id="cart" class="cart">
+            <div class="cart-item static d-flex justify-content-between text-capitalize my-3">
+                <div class="cart-item-text">
+                    <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+                    <span>$</span>
+                    <span id="cart-item-price" class="cart-item-price mb-0">10.00</span>
+                </div>
+                <a href="#" id='cart-item-remove' class="cart-item-remove">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </div>
+
+            <!-- cart total -->
+            <div class="cart-total-container d-flex justify-content-around mt-5">
+                <h5>Total</h5>
+                <h5> $ <strong id="cart-total" class="font-weight-bold">10.00</strong> </h5>
+            </div>
+
+            <!-- cart buttons -->
+            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+                <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--SlideShow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./img/first.jpg" class="img-fluid w-100">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/second.jpg" class="img-fluid w-100" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/third.jpg" class="img-fluid w-100">
+        </div>
+    </div>
+    <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <!--We are more than a brand-->
+    <div class="row mx-4 p-4" id="about">
+        <div class="col-lg-6 p-5 text-light">
+            <h2 class="p-3">We are more than a brand</h2>
+            <p class="about">
+                The SunChase group was formed in 2002 with a mission to take great care of its customers’ eyesight.Each member of the team contributes their fair share of the workload and fully understands what their responsibilities are and where they fit in with the running of the business. They feel a sense of belonging to the team, are committed to their work, and really care about the success of the company. We have more than 15 desginers in Rome and Barcelona, with expert staff supplying reliable products...
+            </p>
+            <button class="open btn btn-outline-light float-right">See More</button>
+            <div class="modal">
+                <div class="modal-container fade">
+                    <h4>SunChase Company</h4>
+                    <p>  A company description provides an overview of key aspects of your business, like what you do and what makes your business unique. Anyone reading your business description should have no problem understanding the scope of your business.
+                        Lenders and investors should see how your business has a place in the market, as well as its benefits to future customers.
+                        Your business’s mission statement is the part of your company description that you want the public to see. And, you should include your vision statement, too.
+                    </p>
+                    <button class="close btn text-light">x</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 p-5">
+            <img src="img/team.jpg" class="team" />
+        </div>
+    </div>
+
+    <!--Select Category-->
+    <h2 class="text-center text-light pb-2">Select your category</h2><p class="underline mb-4"></p>
+
+    <div class="row m-4 p-4">
+
+        <div class="col-md-4 p-4">
+            <a href="#" class="category">
+                <h4>Women</h4>
+                <img src="./img/women.png" alt="Women" class="col-sm-12 ctg" />
+            </a>
+        </div>
+        <div class="col-md-4 p-4">
+
+            <a href="#" class="category">
+                <h4>Men</h4>
+                <img src="./img/men.png" alt="Men" class="col-sm-12 ctg" />
+            </a>
+        </div>
+        <div class="col-md-4 p-4">
+            <a href="#" class="category">
+                <h4>Festival</h4>
+                <img src="./img/festival.png" alt="Festival" class="col-sm-12 ctg" />
+            </a>
+        </div>
+    </div>
+
+
+    <!--Most wanted Items-->
+    <h2 class="text-center text-light pb-2" id="mostwanted">Most wanted</h2><p class="underline mb-5"></p>
+    <div class="row m-4">
+        <div class="container d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top" src="./img/pradaPE01vs.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">PRADA</h4>
+                    <p class="card-text">Prada Men PR 01vs</p><span>$ </span><span class="price">97.99</span>
+
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top" src="./img/Ray-BanRb4306.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">RAY-BAN</h4>
+                    <p class="card-text">Ray-Ban Women Rb 4306</p><span>$ </span><span class="price">70.00</span>
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top w-100" src="./img/gucci.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Gucci</h4>
+                    <p class="card-text">Awesome Women GC 22 </p><span>$ </span><span class="price">120.99</span>
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container  d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top w-100" src="./img/YSL.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">YSL</h4>
+                    <p class="card-text">Classic SL Men 28 metal</p><span>$ </span><span class="price">109</span>
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-4">
+        <div class="container d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top" src="./img/PradaPR02vs.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">PRADA</h4>
+                    <p class="card-text">Prada Women PR 02vs</p><span>$ </span><span class="price">90.89</span>
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top" src="./img/RalphRa5160.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">RALPH</h4>
+                    <p class="card-text">Ralph Women Ra 5160</p><span>$ </span><span class="price">90.89</span>
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top w-100" src="./img/Ray-BanRB3716-Clubmaster-Metal.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">RAY-BAN</h4>
+                    <p class="card-text">Ray-Ban Men RB3716 Clubmaster Metal</p><span>$ </span><span class="price">120.99</span>
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center col-md-3" id="wanted-items">
+            <div class="card">
+                <img class="card-img-top w-100" src="./img/ValentinoVa2040.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">VALENTINO</h4>
+                    <p class="card-text">Valentino Women Va 2040</p><span>$ </span><span class="price">109</span>
+                    <span class="store-item-icon float-right">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Reviews-->
+    <div class="container container-review w-75 mx-auto" id="ourclients">
+
+        <h2 class="d-block text-center">Our reviews</h2><p class="underline mb-5"></p>
+        <article class="review d-block">
+            <div>
+                <img class="img-review" id="person-img" alt="Client photo" />
+            </div>
+            <h4 id="author"></h4>
+            <p id="job"></p>
+            <p id="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </article>
+
+        <div class="button-container mt-3">
+            <button class="prev-btn btn btn-xs btn-outline-light mr-4">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn btn btn-xs btn-outline-light">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!--Random BTN-->
+            <button class="random-btn btn btn-outline-light btn-md mt-3">
+                Random review
+            </button>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid">
+        <div class="row p-4">
+            <div class="col-6 text-center">
+                <h2 class="text-light flinks">Share with the world</h2>
+                <span><i class="fab fa-facebook fa-2x text-light p-2 "></i></span>
+                <span><i class="fab fa-instagram fa-2x text-light p-2"></i></span>
+                <span><i class="fab fa-twitter fa-2x text-light p-2"></i></span>
+                <p class="text-light"><i class="fas fa-copyright pr-2 mt-5"></i>All rights reserved</p>
+            </div>
+            <div class="col-3">
+                <ul class="list-unstyled flinks">
+                    <li><h3><a href="#" class="text-light">Brands</a></h3></li>
+                    <li><a href="#" class="text-light">Ray-Ban</a></li>
+                    <li><a href="#" class="text-light">Prada</a></li>
+                    <li><a href="#" class="text-light">Valentino</a></li>
+                    <li><a href="#" class="text-light">Gucci</a></li>
+                    <li><a href="#" class="text-light">Ralph</a></li>
+                    <li><a href="#" class="text-light">YSL</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="list-unstyled flinks">
+                    <li><h3><a href="#" class="text-light">Contact</a></h3></li>
+                    <li><a href="#" class="text-light">Adress</a></li>
+                    <li><a href="#" class="text-light">Email</a></li>
+                    <li><a href="#" class="text-light">Phone</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--JavaScript-->
+    <script src="app.js"></script>
+</body>
+</html>
